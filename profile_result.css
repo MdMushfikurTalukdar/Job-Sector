@@ -1,0 +1,39 @@
+body{
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+table, th, td {
+    border: 1px solid;
+}
+table{
+    background-color: white;
+    height: 120px;
+    width: 300px;
+    padding: 9px;
+    margin: 5% auto;
+    margin-top: 200px;
+}
+.btn1{
+    height: 30px;
+    width: 102px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    margin-left: 871px;
+}
+.btn1:hover{
+    background-color: rgb(170, 164, 164);
+}
+.btn2{
+    height: 30px;
+    width: 102px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    margin-left: 997px;
+    margin-top: -30px;
+    position: fixed;
+}
+.btn2:hover{
+    background-color: rgb(170, 164, 164);
+}

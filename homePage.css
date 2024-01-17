@@ -1,0 +1,62 @@
+.banner{
+    position: relative;
+    text-align: center;
+  }
+  
+.ban_img{
+    margin-top: 10px;
+    height: 600px;
+    width: 1555px;
+}
+
+.footer{
+    position: absolute;
+}
+
+.text_welcome{
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    color: #09000c;
+}
+
+.text_welcome:hover{
+    color: rgb(44, 94, 233);
+   
+    cursor: pointer;
+}
+
+.text_welcome:active{
+    color: yellow;
+   
+    cursor: pointer;
+}
+
+.btnStart{
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+    border: none;
+    font-weight: bolder;
+    font-size: large;
+    box-shadow: 0 8px 16px 0 rgba(10, 10, 10, 0.5);
+    background-color: orange;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btnStart:hover{
+    background-color: red;
+    color: white;
+}
+
+.btnStart:active{
+    background-color: yellow;
+    color: black;
+}

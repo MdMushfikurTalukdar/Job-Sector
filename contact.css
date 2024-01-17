@@ -1,0 +1,52 @@
+.container{
+    background-color: white;
+    padding: 20px 30px 5px 20px;
+    border: 1px snow;
+    border-radius: 30px;
+    width: 80%;
+    text-align: right;
+    
+    
+    
+}
+body{
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 17px;
+    padding: 200px;
+    margin: 5% auto;
+    border: 100px;
+    
+}
+input[type="text"],
+input[type="text"],
+input[type="text"],
+textarea{
+    background-color: hsla(0, 4%, 84%, 0.888);
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+
+}
+input[type="submit"]{
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    padding: 10px;
+    border:none;
+    border-radius: 15px;
+    color: white;
+    font-style: italic;
+}
+input[type="submit"]:hover{
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+    color: solid;
+}
+img{
+    height: 100%;
+       
+    object-fit: cover;
+        margin-right: 400px;
+      padding-bottom: 50px;
+}

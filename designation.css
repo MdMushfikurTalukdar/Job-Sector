@@ -1,0 +1,41 @@
+.btnChoose{
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    border: none;
+}
+
+.container{
+    background-color: transparent;
+}
+
+.testemonial{
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.btnChoose{
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.btnChoose:hover{
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+
+.linkChoose{
+    color: white;
+    font-weight: bold;
+}
+
+.linkChoose:hover{
+    color: white;
+}
+
+.top_link{
+    margin-left: 40px;
+}
+
+.return_link{
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}

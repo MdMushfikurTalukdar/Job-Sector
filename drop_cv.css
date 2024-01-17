@@ -1,0 +1,74 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container styles */
+.container {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label, input {
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 246px;
+}
+
+button:hover {
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+.pdf{
+    font-size: small;
+    color: red;
+}
+.text1{
+    font-size: 29px;
+    font-weight: bold;
+}
+.btn2{
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: -35px;
+    position: fixed;
+    margin-left: -163px;
+}
+.btn2:hover {
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}

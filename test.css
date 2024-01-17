@@ -1,0 +1,44 @@
+/* ... Your existing CSS rules ... */
+
+/* New styles for the search field */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+.search-container form {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  width: 300px; /* Adjust the width of the search field as needed */
+  flex: 1; /* Allow the input field to expand and fill available space */
+  padding-right: 35px; /* Space for the button */
+}
+
+.search-container button[type="submit"] {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  left: -30px; /* Position the button on top of the input field */
+}
+
+/* Styles for the search icon inside the button */
+.search-container button[type="submit"] img {
+  width: 20px; /* Adjust the size of the search icon */
+  height: 20px;
+}
+
+/* Adjust button appearance on hover and focus (optional) */
+.search-container button[type="submit"]:hover,
+.search-container button[type="submit"]:focus {
+  /* Add hover/focus styles if needed */
+}

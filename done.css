@@ -1,0 +1,60 @@
+
+        /* Reset default margin and padding for all elements */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Container styles */
+        .container {
+            text-align: center;
+            background-color: #ffffff; /* Background color */
+            padding: 20px; /* Adding some padding */
+            border-radius: 10px; /* Adding rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow */
+        }
+
+        /* Image styles */
+        .image {
+            height: 200px;
+            width: 200px;
+            margin-bottom: 20px;
+        }
+        .image2 {
+            height: 200px;
+            width: 200px;
+            margin-bottom: 20px;
+        }
+
+        /* Text styles */
+        .text {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Button styles */
+        .button {
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+        }

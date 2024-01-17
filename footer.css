@@ -1,0 +1,85 @@
+.box{
+    height: 300px;
+    width: 1555px;
+    background-color: black;
+}
+
+.text_1{
+    font-weight: bolder;
+    font-size: 40px;
+    color: white;
+    margin-left: 40%;
+    font-family:'Times New Roman', Times, serif;
+    padding-top: 2%;
+}
+
+.left_box{
+    width: 40%;
+    height: 80%;
+    float: left;
+    background-color: transparent;
+    
+}
+
+.right_box{
+    width: 40%;
+    height: 80%;
+    float: right;
+    background-color: transparent;
+}
+
+.phone{
+    height: 60px;
+    width: 80px;
+    margin-left: 60%;
+}
+
+.text_2{
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 60%;
+}
+.text_3{
+    color: white;
+    margin-left: 60%;
+    padding-top: 1%;
+}
+
+.icon_email{
+    height: 40px;
+    width: 40px;
+    margin-top: 1px;
+    border-radius: 10px;
+    padding-top: 2px;
+    margin-left: 30%;
+}
+
+.text_4{
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 30%;
+}
+.text_5{
+    color: white;
+    margin-left: 30%;
+    padding-top: 1%;
+}
+
+.text_6{
+    color: white;
+    margin-left: 30%;
+    padding-top: 1%;
+    text-decoration: none;
+    
+}
+
+.text_6:hover{
+    text-decoration: underline;
+    color: aqua;
+}
+
+.text_6:active{
+    color: red;
+}
