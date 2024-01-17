@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 27, 2023 at 01:05 AM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- Generation Time: Jan 18, 2024 at 12:10 AM
+-- Server version: 10.4.25-MariaDB
+-- PHP Version: 8.0.23
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -31,7 +31,7 @@ CREATE TABLE `desg` (
   `d_id` int(11) NOT NULL,
   `d_name` varchar(50) NOT NULL,
   `d_pic` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `desg`
@@ -51,7 +51,7 @@ INSERT INTO `desg` (`d_id`, `d_name`, `d_pic`) VALUES
 CREATE TABLE `key_word` (
   `s_id` int(11) NOT NULL,
   `word` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `key_word`
@@ -82,6 +82,28 @@ INSERT INTO `key_word` (`s_id`, `word`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `message`
+--
+
+CREATE TABLE `message` (
+  `m_id` int(11) NOT NULL,
+  `m_name` varchar(50) NOT NULL,
+  `m_email` varchar(50) NOT NULL,
+  `m_m` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `message`
+--
+
+INSERT INTO `message` (`m_id`, `m_name`, `m_email`, `m_m`) VALUES
+(1, 'bb', 'bb', 'bbb'),
+(0, 'sfds', 'sd', 'sdsds'),
+(0, 'werew', 'sd', 'erere');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `question`
 --
 
@@ -92,7 +114,7 @@ CREATE TABLE `question` (
   `three` varchar(100) NOT NULL,
   `four` varchar(100) NOT NULL,
   `correct` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `question`
@@ -245,7 +267,7 @@ CREATE TABLE `requ` (
   `two` varchar(500) NOT NULL,
   `three` varchar(500) NOT NULL,
   `four` varchar(500) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `requ`
@@ -274,20 +296,23 @@ CREATE TABLE `result` (
   `marks` int(11) NOT NULL,
   `date` year(4) NOT NULL DEFAULT current_timestamp(),
   `sl` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `result`
 --
 
 INSERT INTO `result` (`id`, `s_id`, `marks`, `date`, `sl`) VALUES
-(1, 5, 20, '2023', 26),
-(1, 12, 60, '2023', 42),
-(1, 12, 60, '2023', 43),
-(1, 12, 60, '2023', 44),
-(1, 12, 70, '2023', 45),
-(1, 12, 10, '2023', 46),
-(1, 5, 20, '2023', 47);
+(1, 12, 60, 2023, 42),
+(1, 12, 60, 2023, 43),
+(1, 12, 60, 2023, 44),
+(1, 5, 20, 2023, 47),
+(1, 12, 30, 2023, 48),
+(1, 9, 30, 2023, 54),
+(1, 9, 30, 2023, 55),
+(2, 23, 90, 0000, 56),
+(1, 12, 40, 2023, 57),
+(1, 12, 40, 2023, 58);
 
 -- --------------------------------------------------------
 
@@ -299,7 +324,7 @@ CREATE TABLE `sector` (
   `s_name` varchar(50) NOT NULL,
   `s_id` int(11) NOT NULL,
   `d_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `sector`
@@ -334,14 +359,14 @@ CREATE TABLE `user` (
   `birthday` varchar(50) NOT NULL,
   `address` varchar(100) NOT NULL,
   `image` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`name`, `id`, `mail`, `password`, `description`, `desg`, `sector`, `number`, `birthday`, `address`, `image`) VALUES
-('Md akkas uddin', 1, 'akkas@gmail.com', 'akkas123', 'i am a developer i love to program hole day', '', '', '01882072745', '', 'dhanmondi,dhaka', 'akkas.jpg'),
+('Md Akkas Uddin', 1, 'akkas@gmail.com', 'akkas123', 'i am a developer i love to program hole day', '', '', '01882072745', '', 'dhanmondi,dhaka', 'akkas.jpeg'),
 ('Ms Momota Banargi', 2, 'momota@gmail.com', 'momota123', 'I am not a developer but i want to become a developer so i come herer to test but i am interest on other sector', '', '', '01882045412', '', 'mirpur,dhaka', 'momota.jpeg');
 
 --
@@ -408,7 +433,7 @@ ALTER TABLE `requ`
 -- AUTO_INCREMENT for table `result`
 --
 ALTER TABLE `result`
-  MODIFY `sl` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `sl` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 
 --
 -- AUTO_INCREMENT for table `sector`
